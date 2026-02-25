@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#AF1515"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="98dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/txt1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:textColor="#CA1E1E"
+            android:textSize="24sp"
+            tools:text="TIME:05" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="SCORE:90"
+            android:textColor="#AD2323"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtresult"
+        android:layout_width="90dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="9dp"
+        android:gravity="center"
+        android:textColor="#FFEB3B"
+        android:textColorHint="#F4DC0A"
+        android:textSize="78sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btn"
+        app:layout_constraintVertical_bias="0.453" />
+
+    <EditText
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="2dp"
+        android:ems="10"
+        android:hint="Enter Second Number"
+        android:inputType="text"
+        android:textColorHint="#0D0909"
+        app:layout_constraintBottom_toTopOf="@+id/btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt1" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="161dp"
+        android:layout_marginBottom="98dp"
+        android:background="#DB1B1B"
+        android:backgroundTint="#DE1B1B"
+        android:text="Button"
+        android:textColor="#1D1B1B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt2" />
+
+    <EditText
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="105dp"
+        android:layout_marginBottom="43dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter First Number"
+        android:inputType="text"
+        android:textColorHint="#312A2A"
+        app:layout_constraintBottom_toTopOf="@id/txt2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.868"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
