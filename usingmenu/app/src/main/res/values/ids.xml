@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="options_bba" type="id" />
+    <item name="options_bca" type="id"/>
+    <item name="options_mca" type="id"/>
+</resources>
